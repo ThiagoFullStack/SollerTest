@@ -1,0 +1,99 @@
+.services-section-power {
+  display: flex;
+  height: auto;
+  width: 100%;
+  background-color: #ffffff;
+  margin-top: -30%;
+  margin-left: 6%;
+}
+
+.text-container-power {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 100px;
+}
+
+.text-container-power p{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.text-container-power h1{
+  font-size: 220%;
+}
+
+.text-columns-power {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 100px;
+}
+
+.text-column-power {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Div da esquerda com a imagem */
+.image-container-power {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.full-image-power {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* Media query para telas menores que 1707px */
+@media screen and (max-width: 1707px) {
+
+  .services-section-power {
+    margin-bottom: 50px;
+  }
+
+  .services-section-power {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .text-container-power {
+    order: 1; 
+    text-align: center; 
+    margin-right: 50px;
+    margin-bottom: 20px;
+  }
+
+  .text-column-power-4 {
+    position: relative;
+    top: -30px;
+  }
+
+  .text-container-power p {
+    font-size: 18px;
+    font-weight: bold; 
+  }
+
+  .image-container-power {
+    order: 2; 
+    margin-top: 20px;
+  }
+
+  .full-image-power {
+    width: 120%;
+    margin-top: -80px;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+}

@@ -1,0 +1,151 @@
+
+.new-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    height: 100vh; 
+    padding: 20px;
+    overflow: hidden;
+    background-color: #FFFFFF;
+}
+
+.content {
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center; 
+    width: 100%;
+    padding: 20px;
+}
+
+.text-content {
+    text-align: center; 
+    margin-bottom: 20px;  
+}
+
+.text-content h4 {
+    color: #FFC107; 
+    font-size: 20px;
+    margin-bottom: 10px; 
+}
+
+.text-content h1 {
+    color: #000000; 
+    font-weight: bold;
+    font-size: 3rem;
+    margin-bottom: 20px;   
+}
+
+.text-content h3 {
+    color: #000000; 
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.image-content {
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    justify-items: center;
+    width: 80%;
+    position: relative;
+    top: 180px;
+    left: 150px;
+}
+
+.central-image {
+    width: 100%; 
+    height: auto;
+    object-fit: cover; 
+}
+
+.left-circle {
+    position: absolute; 
+    left: -38%;
+    top: -45%; 
+    width: 45%;
+    height: 75%;
+    background-color: #F59E0B; 
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.right-circle {
+    position: absolute;
+    right: -5%;
+    top: -20%; 
+    width: 45%;
+    height: 75%;
+    background-color: #7E22CE; 
+    border-radius: 50%;
+    z-index: 0; 
+}
+
+/* Media query para trocar a imagem */
+@media screen and (max-width: 1707px) {
+  .central-image {
+    content: url('/public/images/telaMobie.png'); 
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+  }
+    
+  .text-content {
+    text-align: center; 
+    margin-top: 150px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center; 
+    width: 100%;
+    margin-bottom: 100px;
+    padding: 20px;
+  }
+
+  .text-content h4 {
+    font-size: 1.1rem;
+  }
+
+  .text-content h1 {
+    font-size: 2rem;
+  }
+
+  .text-content h3 {
+    font-size: 1rem;
+  }
+
+  .image-content {
+    width: 95%;
+    top: 180px;
+    left: 158px;
+  }
+
+  .central-image {
+    width: 100%; 
+    height: auto;
+    bottom: 130px;
+    right: 120px;
+    object-fit: cover;
+  }
+
+  .left-circle {
+    left: -90%;
+    top: -110%; 
+    width: 60%;
+    height: 80%;
+  }
+
+  .right-circle {
+    right: 7%;
+    top: -80%;  
+    width: 60%;
+    height: 80%;
+  }
+  
+}
