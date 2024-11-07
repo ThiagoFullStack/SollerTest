@@ -37,7 +37,7 @@
   padding-top: 10%;
 }
 
-.navbar-button {
+.navbar-button-card {
   background-color: transparent;
   color: #FCD34D;
   border: 2px solid #FCD34D;
@@ -53,17 +53,17 @@
   transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; 
 }
 
-.navbar-button .button-arrow {
+.navbar-button-card .button-arrow {
   transition: transform 0.3s ease, color 0.3s ease; 
 }
 
-.navbar-button:hover {
+.navbar-button-card:hover {
   background-color: #FCD34D; 
   color: #78350F; 
   border-color: #FCD34D; 
 }
 
-.navbar-button:hover .button-arrow {
+.navbar-button-card:hover .button-arrow {
   transform: translateX(5px); 
   color: #78350F; 
 }
@@ -77,10 +77,10 @@
   background-color: #fff;
   border-radius: 10px;
   padding: 20px;
-  width: 320px; 
-  height: 420px; 
+  width: 237px; 
+  height: 330px; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-  margin: 10px; 
+  margin: 10px;
 }
 
 .card-item:hover {
@@ -89,12 +89,12 @@
 }
 
 .card-item .user-name {
-  margin-top: 80px;
+  margin-top: 60px;
 }
 
 /* Texto com Espaçamento */
 .user-name {
-  font-size: 15px;
+  font-size: 11px;
   line-height: 1.8;
   color: #333;
   margin-bottom: 30px;
@@ -109,29 +109,29 @@
 
 /* Estilo da Imagem do Usuário */
 .user-image {
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%; 
   object-fit: cover;
 }
 
 /* Estilo do Nome do Usuário */
 .user-text {
-  font-size: 18px;
+  font-size: 12px;
   color: #333;
   line-height: 1.2; 
 }
 
 /* Estilo para o KWh */
 .user-text p {
-  font-size: 14px;
+  font-size: 12px;
   color: #666;
   margin: 0; 
 }
 
-
-/* Media query para telas menores que 1707px */
+/* Media query para telas menores que 769px */
 @media screen and (max-width: 769px) {
+  
     .purple-section {
       padding: 1rem;
     }
@@ -169,7 +169,6 @@
       padding: 5%;
     }
   
-    /* Ajuste para o botão na resolução especificada */
     .navbar-button {
       padding: 16px 60px;
       margin-top: 30px;

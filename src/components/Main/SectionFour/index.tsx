@@ -28,7 +28,7 @@ export default function SectionFour() {
         </div>
 
         <div className="right-button">
-          <button className="navbar-button">
+          <button className="navbar-button-card">
             Request a Quote
             <span className="button-arrow">→</span>
           </button>

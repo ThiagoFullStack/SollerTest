@@ -1,91 +1,133 @@
-
-.new-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    position: relative;
-    height: 100vh; 
-    padding: 20px;
-    overflow: hidden;
-    background-color: #FFFFFF;
+/* Estilo do conteúdo principal */
+section.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  padding: 20px;
+  background-color: #FFFFFF;
+  height: 100vh;
+  overflow: hidden;
 }
 
-.content {
-    display: flex;
-    flex-direction: column; 
-    justify-content: flex-start; 
-    align-items: center; 
-    width: 100%;
-    padding: 20px;
+/* Estilo do texto */
+section.content .text-content {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.text-content {
-    text-align: center; 
-    margin-bottom: 20px;  
+section.content .text-content h4 {
+  color: #FFC107;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
-.text-content h4 {
-    color: #FFC107; 
-    font-size: 20px;
-    margin-bottom: 10px; 
+section.content .text-content h1 {
+  color: #000000;
+  font-weight: bold;
+  font-size: 3rem;
+  margin-bottom: 20px;
 }
 
-.text-content h1 {
-    color: #000000; 
-    font-weight: bold;
-    font-size: 3rem;
-    margin-bottom: 20px;   
+section.content .text-content h3 {
+  color: #000000;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-align: center;
 }
 
-.text-content h3 {
-    color: #000000; 
-    font-size: 1.2rem;
-    line-height: 1.5;
-    text-align: center;
+/* Estilo da imagem e círculos */
+section.content .image-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  position: relative;
+  top: 180px;
 }
 
-.image-content {
-    display: flex;
-    justify-content: center;  
-    align-items: center;
-    justify-items: center;
-    width: 80%;
-    position: relative;
-    top: 180px;
-    left: 150px;
+section.content .central-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
-.central-image {
-    width: 100%; 
-    height: auto;
-    object-fit: cover; 
+section.content .circle {
+  position: absolute;
+  border-radius: 50%;
+  z-index: 0;
 }
 
-.left-circle {
-    position: absolute; 
-    left: -38%;
-    top: -45%; 
-    width: 45%;
-    height: 75%;
-    background-color: #F59E0B; 
-    border-radius: 50%;
-    z-index: 0;
+section.content .left-circle {
+  left: -38%;
+  top: -45%;
+  width: 45%;
+  height: 75%;
+  background-color: #F59E0B;
 }
 
-.right-circle {
-    position: absolute;
-    right: -5%;
+section.content .right-circle {
+  right: -5%;
+  top: -20%;
+  width: 45%;
+  height: 75%;
+  background-color: #7E22CE;
+}
+
+/* Ajustes para telas menores */
+@media screen and (max-width: 1280px) {
+
+  section.content {
+    padding: 15px;
+    top: -350px;
+    max-width: 100%;
+
+  }
+
+  section.content .text-content h1 {
+    font-size: 2.5rem; 
+    margin-bottom: 15px;
+  }
+
+  section.content .text-content h4 {
+    font-size: 18px; 
+  }
+
+  section.content .text-content h3 {
+    font-size: 1rem; 
+    gap: 50px;
+  }
+
+  section.content .text-content {
+   margin-bottom: 60px;
+  }
+
+  section.content .image-content {
+    width: 95%; 
+    left: 120px;
+    top: 150px; 
+ }
+
+  section.content .left-circle {
+    left: -25%; 
+    top: -50%; 
+    width: 40%; 
+    height: 80%;
+  }
+
+  section.content .right-circle {
+    right: 5%; 
     top: -20%; 
-    width: 45%;
-    height: 75%;
-    background-color: #7E22CE; 
-    border-radius: 50%;
-    z-index: 0; 
+    width: 40%; 
+    height: 80%;
+  }
 }
 
-/* Media query para trocar a imagem */
-@media screen and (max-width: 1707px) {
+/* Media query para telas menores que 769px */
+@media screen and (max-width: 769px) {
+  
   .central-image {
     content: url('/public/images/telaMobie.png'); 
     width: 100%; 

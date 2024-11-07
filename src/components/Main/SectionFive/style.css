@@ -16,14 +16,17 @@
   font-weight: bold;
   color: #FCD34D;
   margin-top: -50px;
-  padding-left: 80px;
+  padding-left: 40px;
 }
 
 .background-section .top-content h2.custom-h2 {
   font-size: 45px; 
   font-weight: bold;
   color: #FFFF;
-  padding-left: 75px; 
+  padding-left: 35px; 
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
 }
 
 .background-section {
@@ -57,8 +60,8 @@
 
 .purple-circle {
   position: absolute;
-  width: 700px;
-  height: 700px;
+  width: 500px;
+  height: 500px;
   margin-top: -65%;
   margin-left: 40%;
   background-color: #A252EE;
@@ -72,12 +75,52 @@
   z-index: 1;
 }
 
-.purple-circle p{
- font-size: 15px;
+.purple-circle p {
+ font-size: 12px;
  padding: 10px;
- margin-right: 60px;
+ top: 10px;
  color: #FFFF;
- font-weight: bold;
+}
+
+.navbar-button {
+  position: absolute;
+  top: 40px;
+  background-color: transparent;
+  color: #FCD34D;
+  border: 2px solid #FCD34D;
+  border-radius: 30px;
+  padding: 20px 30px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; 
+}
+
+.navbar-button .button-arrow {
+  transition: transform 0.3s ease, color 0.3s ease; 
+}
+
+.navbar-button:hover {
+  background-color: #FCD34D; 
+  color: #78350F; 
+  border-color: #FCD34D; 
+}
+
+.navbar-button:hover .button-arrow {
+  transform: translateX(5px); 
+  color: #78350F; 
+}
+
+.purple-circle p {
+  position: relative;
+  left: -25px;
+  margin-top: 70px;
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
 }
 
 .central-image {
@@ -97,7 +140,7 @@
   display: none; /* A nova imagem será visível */
 }
 
-/* Estilos para telas pequenas (abaixo de 769px) */
+/* Media query para telas menores que 769px */
 @media screen and (max-width: 769px) {
 
   .background-section .top-content {

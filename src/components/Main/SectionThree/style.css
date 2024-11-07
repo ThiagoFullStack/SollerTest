@@ -4,6 +4,7 @@
   width: 100%;
   background-color: #ffffff;
   margin-top: -30%;
+  padding-bottom: 10%;
   margin-left: 6%;
 }
 
@@ -55,8 +56,8 @@
 }
 
 
-/* Media query para telas menores que 1707px */
-@media screen and (max-width: 1707px) {
+/* Media query para telas menores que 769px */
+@media screen and (max-width: 769px) {
 
   .services-section-power {
     margin-bottom: 50px;

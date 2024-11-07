@@ -1,109 +1,187 @@
+/* Ajustes principais */
 .central-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 20px;
-    height: 100vh;
-    background-color: #FFFFFF;
-    position: relative; 
-    gap: 20px; 
-  }
-  
-  .left-div {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    margin-left: 50px;
-    gap: 50px;
-    z-index: 2;
-  }
-  
-  .left-div h1 {
-    font-size: 4rem;
-    line-height: 1.2;
-    color: #333;
-  }
-  
-  .left-div h3 {
-    font-size: 1.2rem;
-    color: #666;
-    margin-top: -30px;
-  }
-  
-  .left-div h4 {
-    font-size: 1rem;
-    color: #797878;
-    margin-top: 30px;
-  }
-  
-  .quote-btn {
-    width: 13rem;
-    background-color: transparent;
-    color: #581C87;
-    border: 2px solid #581C87;
-    padding: 16px 26px;
-    margin-top: -30px;
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
-  }
-  
-  .quote-btn:hover {
-    background-color: #581C87;
-    color: #E6BA55;
-    border-color: #581C87;
-  }
-  
-  .profile {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-top: -30px;
-  }
-  
-  .profile-img {
-    width: 75px;
-    height: 75px;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-  
-  .profile-info p {
-    margin: 0;
-  }
-  
-  .profile-info p:first-child {
-    font-weight: bold;
-  }
-  
-  .profile-info p:last-child {
-    font-size: 0.9rem;
-    color: #666;
-  }
-  
-  .right-div {
-    position: relative;
-    flex: 1;
-    max-width: 50%;
-    height: 10%; 
-    z-index: 1;
-  }
-  
-  .main-image {
-    position: absolute;
-    top: -10vw; 
-    left: 2vw; 
-    width: 50vw; 
-    height: 100vh;
-    object-fit: cover; 
-    z-index: -1; 
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  height: 100vh;
+  background-color: #FFFFFF;
+  position: relative;
+  gap: 20px;
+}
+
+/* Div da esquerda */
+.central-container .left-div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  gap: 50px;
+  z-index: 2;
+}
+
+.central-container .left-div h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+  color: #333;
+}
+
+.central-container .left-div h3 {
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: -30px;
+}
+
+.central-container .left-div h4 {
+  font-size: 1rem;
+  color: #797878;
+  margin-top: 30px;
+}
+
+/* Botão de citação */
+.central-container .left-div .quote-btn {
+  width: 13rem;
+  background-color: transparent;
+  color: #581C87;
+  border: 2px solid #581C87;
+  border-radius: 25px;
+  padding: 16px 26px;
+  margin-top: -30px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.central-container .left-div .quote-btn:hover {
+  background-color: #581C87;
+  color: #E6BA55;
+  border-color: #581C87;
+}
+
+.central-container .left-div .quote-btn .arrow {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.central-container .left-div .quote-btn:hover .arrow {
+  transform: translateX(5px);
+  color: #E6BA55;
+}
+
+/* Perfil */
+.central-container .left-div .profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: -30px;
+}
+
+.central-container .left-div .profile-img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.central-container .left-div .profile-info p {
+  margin: 0;
+}
+
+.central-container .left-div .profile-info p:first-child {
+  font-weight: bold;
+}
+
+.central-container .left-div .profile-info p:last-child {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Div da direita */
+.central-container .right-div {
+  position: relative;
+  flex: 1;
+  max-width: 50%;
+  height: 10%;
+  z-index: 1;
+}
+
+/* Imagem principal */
+.central-container .right-div .main-image {
+  position: absolute;
+  top: -10vw;
+  left: 2vw;
+  width: 50vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Ajustes para tela de 1280x800 */
+@media screen and (max-width: 1280px) {
+  .central-container {
+    padding: 15px;
+    gap: 15px;
   }
 
-  @media screen and (max-width: 1707px){
+  .central-container .left-div {
+    margin-left: 30px;
+    gap: 30px;
+  }
+
+  .central-container .left-div h1 {
+    font-size: 3rem;
+  }
+
+  .central-container .left-div h3 {
+    font-size: 1rem;
+    margin-top: -20px;
+  }
+
+  .central-container .left-div h4 {
+    font-size: 0.9rem;
+    margin-top: 25px;
+  }
+
+  .central-container .left-div .quote-btn {
+    width: 12rem;
+    padding: 14px 22px;
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
+
+  .central-container .left-div .profile {
+    gap: 8px;
+    margin-top: -20px;
+  }
+
+  .central-container .left-div .profile-img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .central-container .left-div .profile-info p:last-child {
+    font-size: 0.8rem;
+  }
+
+  .central-container .right-div {
+    max-width: 45%;
+    height: auto;
+  }
+
+  .central-container .right-div .main-image {
+    position: absolute;
+    top: -200px;
+    left: 50px;
+    width: 550px;
+    height: 550px; 
+  }
+}
+
+  /* Media query para telas menores que 769px */
+  @media screen and (max-width: 769px){
     
     .left-div {
       position: absolute;

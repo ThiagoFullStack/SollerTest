@@ -1,11 +1,11 @@
 .services-section {
-    display: flex;
-    padding-bottom: 30%;
-    height: auto;
-    width: 100%;
-    background-color: #ffffff;
-    margin-top: 10%;
-    margin-left: -5%; 
+  display: flex;
+  padding-bottom: 30%;
+  height: auto;
+  width: 100%;
+  background-color: #ffffff;
+  margin-top: -20%;
+  margin-left: -5%; 
 }
   
 .text-container {
@@ -78,8 +78,8 @@
   object-fit: cover; 
 }
 
-/* Media query para telas menores que 1707px */
-@media screen and (max-width: 1707px) {
+/* Media query para telas menores que 769px */
+@media screen and (max-width: 769px) {
 
   .services-section {
     flex-direction: column; 
