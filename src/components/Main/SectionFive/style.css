@@ -165,7 +165,7 @@
   }
 
   .background-section .top-content h2.custom-h2 {
-    font-size: 30px; 
+    font-size: 25px; 
     font-weight: bold;
     color: #FFFF;
     padding-left: 75px; 
@@ -178,11 +178,13 @@
 
   .background-section .navbar-button {
     position: absolute;
+    text-align: center;
+    padding: -45px;
     top: -320px;
-    left: 223px;
-    width: 100%;
+    left: 250px;
+    width: 85%;
     height: 60px;
-    font-size: 20px; 
+    font-size: 18px; 
     white-space: nowrap; /* Impede a quebra de linha no texto */
     overflow: hidden; /* Evita que o texto saia do botão se for muito longo */
     text-overflow: ellipsis; /* Exibe "..." se o texto for muito longo */
@@ -190,8 +192,9 @@
 
   .purple-circle p{
     position: absolute;
-    top: -145px;
-    padding-left: 380px;
+    font-size: 15px;
+    top: -210px;
+    padding-left: 275px;
     white-space: nowrap; 
     overflow: hidden; 
     text-overflow: ellipsis; 

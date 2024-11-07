@@ -127,67 +127,84 @@ section.content .right-circle {
 
 /* Media query para telas menores que 769px */
 @media screen and (max-width: 769px) {
-  
-  .central-image {
-    content: url('/public/images/telaMobie.png'); 
-    width: 100%; 
-    height: auto; 
-    object-fit: cover; 
-  }
     
-  .text-content {
+  .content .text-content {
     text-align: center; 
-    margin-top: 150px;
+    margin-top: 400px;
+    z-index: 1; 
   }
+   
+ .content .central-image {
+   content: url('/public/images/telaMobie.png'); 
+   width: 100%; 
+   height: auto; 
+   object-fit: cover; 
+ }
 
-  .content {
-    display: flex;
-    flex-direction: column; 
-    justify-content: flex-start; 
-    align-items: center; 
-    width: 100%;
-    margin-bottom: 100px;
-    padding: 20px;
-  }
+ .content .text-content {
+   text-align: center; 
+   margin-top: 350px; 
+ }
 
-  .text-content h4 {
-    font-size: 1.1rem;
-  }
+ .content .text-content .textH4 {
+   font-size: 1rem;
+ }
 
-  .text-content h1 {
-    font-size: 2rem;
-  }
+ .content .text-content .textH1 {
+   font-size: 2rem;
+ }
 
-  .text-content h3 {
-    font-size: 1rem;
-  }
+ .content .text-content .textH3 {
+   font-size: 1rem;
+ }
 
-  .image-content {
-    width: 95%;
-    top: 180px;
-    left: 158px;
-  }
+ .image-content .central-image {
+   width: 95%;
+   top: 10px;
+   left: 158px; 
+ }
 
-  .central-image {
-    width: 100%; 
-    height: auto;
-    bottom: 130px;
-    right: 120px;
-    object-fit: cover;
-  }
+ section.content .image-content {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 80%;
+   position: relative;
+   top: 10px;
+ }
 
-  .left-circle {
-    left: -90%;
-    top: -110%; 
-    width: 60%;
-    height: 80%;
-  }
+ section.content .central-image {
+   width: 150%;
+   left: -30%;
+   top: 10%; 
+   height: auto;
+   object-fit: cover;
+ }
 
-  .right-circle {
-    right: 7%;
-    top: -80%;  
-    width: 60%;
-    height: 80%;
-  }
+  
+ section.content .circle {
+   position: absolute;
+   z-index: 1;
+ }
+
+ section.content .left-circle  {
+   left: -100%;
+   top: -50%; 
+   width: 80%;
+   height: 100%;
+   position: absolute;
+  z-index: 0;
+ }
+
+ section.content .right-circle {
+   right: -30%;
+   top: -20%;  
+   width: 80%;
+   height: 100%; 
+ }
   
 }
+
+
+
+ 

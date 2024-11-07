@@ -234,3 +234,70 @@
     }
 
   }
+
+  /* Media query para telas menores que 393px */
+  @media screen and (max-width: 393px){
+
+    .central-container .left-div {
+      gap: 40px;
+    }
+
+    .left-div {
+      position: absolute;
+      margin-top: 80%;
+      margin-left: -1%;
+      width: 92%;
+      z-index: 2;
+    }
+    
+    .central-container .left-div h1 {
+      font-size: 2.2rem;
+      margin-right: 50px;
+      text-align: center; 
+    }
+    
+    .central-container .left-div h3 {
+      font-size: 15px;
+      text-align: center;
+      margin-top: 10px;
+      margin-right: 50px;
+    }
+    
+    .central-container .left-div h4 {
+      font-size: 16px;
+      color: #797878;
+      margin-top: -10px;
+    }
+
+    .central-container .left-div .quote-btn{
+      margin-top: -20px;
+      margin-left: 10px;
+      border-radius: 45px;
+      font-size: 20px;
+      padding: 18px 50px;
+      width: 280px;
+      height: 60px; 
+      white-space: nowrap; 
+      overflow: hidden; 
+      text-overflow: ellipsis; 
+    }
+    
+    .profile-img {
+      width: 80px;
+      height: 80px; 
+    }
+    
+    .profile-info p:last-child {
+      font-size: 1rem;
+    }
+
+    .central-container .right-div .main-image {
+      position: absolute;
+      top: -95px; 
+      left: 50px;  
+      width: 370px; 
+      height: 340px;
+    }
+  
+    
+  }

@@ -165,12 +165,12 @@
       margin-right: 10px;
     }
   
-    .right-button {
+    .right-button-card {
       padding: 5%;
     }
   
-    .navbar-button {
-      padding: 16px 60px;
+    .navbar-button-card {
+      padding: 16px 40px;
       margin-top: 30px;
       margin-left: -8px;
       font-size: 20px;
@@ -179,7 +179,7 @@
       text-overflow: ellipsis; /* Exibe "..." se o texto for muito longo */
     }
   
-    .navbar-button .button-arrow {
+    .navbar-button-card .button-arrow {
       font-size: 1.5rem; /* seta */
     }
   
