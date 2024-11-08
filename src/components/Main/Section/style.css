@@ -182,122 +182,70 @@
 
   /* Media query para telas menores que 769px */
   @media screen and (max-width: 769px){
+
+    .central-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 0px;
+      height: 100vh;
+      background-color: #FFFFFF;
+      position: relative;
+      gap: 20px;
+    }
     
-    .left-div {
+    .central-container .left-div {
       position: absolute;
-      margin-top: 100%;
-      margin-left: -1%;
+      margin-top: 80%;
+      margin-left: 6%;
       width: 92%;
       z-index: 2;   
     }
-    
-    .left-div h1 {
-      font-size: 2.3rem;
-      text-align: center;
+
+    .central-container .left-div .txH1{
+      font-size: 2rem;
+      display: flex;
+      margin-left: 20px;
     }
     
-    .left-div h3 {
+    .central-container.left-div .txH3 {
       font-size: 16px;
       text-align: center;
       margin-top: -30px;
     }
     
-    .left-div h4 {
+    .central-container.left-div .txH4 {
       font-size: 16px;
       color: #797878;
       margin-top: -10px;
     }
 
-    .quote-btn{
-      margin-top: -20px;
-      margin-left: 27px;
+    .central-container .left-div .quote-btn {
       font-size: 20px;
       padding: 18px 50px;
       width: 19rem;
+      margin-left: 20px;
     }
     
-    .profile-img {
-      width: 80px;
-      height: 80px; 
+    .central-container .profile .profile-img {
+      width: 60px;
+      height: 70px; 
+      margin-top: 20px;
     }
     
-    .profile-info p:last-child {
+    .central-container .profile-info {
       font-size: 1rem;
-    }
-
-    .main-image {
-      position: absolute;
-      top: -110px; 
-      left: 50px;  
-      width: 400px; 
-      height: 400px;
-    }
-
-  }
-
-  /* Media query para telas menores que 393px */
-  @media screen and (max-width: 393px){
-
-    .central-container .left-div {
-      gap: 40px;
-    }
-
-    .left-div {
-      position: absolute;
-      margin-top: 80%;
-      margin-left: -1%;
-      width: 92%;
-      z-index: 2;
-    }
-    
-    .central-container .left-div h1 {
-      font-size: 2rem;
-      display: flex;
-    }
-    
-    .central-container .left-div h3 {
-      font-size: 15px;
-      display: flex;
-      margin-top: 10px;
-    }
-    
-    .central-container .left-div h4 {
-      font-size: 16px;
-      color: #797878;
-      display: flex;
-      margin-top: -10px;
-    }
-
-    .central-container .left-div .quote-btn{
-      margin-top: -20px;
-      display: flex;
-      border-radius: 45px;
-      font-size: 20px;
-      padding: 18px 50px;
-      width: 280px;
-      height: 60px; 
-      white-space: nowrap; 
-      overflow: hidden; 
-      text-overflow: ellipsis; 
-    }
-    
-    .central-container .left-div .profile .profile-img {
-      display: flex;
-      width: 80px;
-      height: 80px; 
-    }
-    
-    .profile-info p:last-child {
-      font-size: 1rem;
+      margin-top: 20px;
     }
 
     .central-container .right-div .main-image {
       position: absolute;
-      top: -95px; 
+      top: -85px; 
       left: 80px;  
-      width: 370px; 
-      height: 340px;
+      width: 350px; 
+      height: 350px;
     }
-  
-    
+
   }
+
+  

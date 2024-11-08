@@ -7,8 +7,8 @@ export default function Section() {
       <main className="central-container">
         {/* Div da esquerda com o texto */}
         <div className="left-div">
-          <h1>Get the Sun to <br /> Power Your Home</h1>
-          <h3>
+          <h1 className="txH1">Get the Sun to <br /> Power Your Home</h1>
+          <h3 className="txH3">
             Viverra viverra nibh enim et aliquam, enim.<br />
             Tempor, sit mus viverra orci dui consequat <br />
             tupis scelerisque.
@@ -17,7 +17,7 @@ export default function Section() {
             Request a Quote
             <span className="arrow">→</span>
           </button>
-          <h4>
+          <h4 className="txH4">
             "Viverra viverra nibh enim et aliquam, enim.<br />
             Tempor, sit mus viverra orci dui consequat <br />
             tupis scelerisque."
