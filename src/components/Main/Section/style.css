@@ -197,7 +197,7 @@
     .central-container .left-div {
       position: absolute;
       margin-top: 80%;
-      margin-left: 6%;
+      margin-left: 10%;
       width: 92%;
       z-index: 2;   
     }
@@ -241,7 +241,7 @@
     .central-container .right-div .main-image {
       position: absolute;
       top: -85px; 
-      left: 80px;  
+      left: 100px;  
       width: 350px; 
       height: 350px;
     }
