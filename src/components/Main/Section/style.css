@@ -185,13 +185,10 @@
 
     .central-container {
       display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
+      justify-content: center;
+      align-items: center;
       padding: 0px;
       height: 100vh;
-      background-color: #FFFFFF;
-      position: relative;
-      gap: 20px;
     }
     
     .central-container .left-div {
@@ -242,8 +239,8 @@
 
     .central-container .right-div .main-image {
       position: absolute;
-      top: -85px; 
-      left: 100px;  
+      top: -460px; 
+      left: -35px;  
       width: 350px; 
       height: 350px;
     }
